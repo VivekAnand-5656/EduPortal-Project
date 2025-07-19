@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal || Login</title> 
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="hero">
+         
+        <div class="box">
+            <a class="logo"  href="#">Edu<span>Portal</span></a>
+            <h4>Login EduPortal</h4>
+            <form action="" class="form" id="loginForm">
+                <input type="email" class="input" name="Email" id="email" placeholder="Enter Your Email" required>
+                <input type="password" class="input" name="password" id="password" placeholder="Enter Password" required> 
+                
+               <button type="submit" class="snbtn" >Log In</button>  
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+
+  
+  const email = document.getElementById("email").value;
+  const pass = document.getElementById("password").value;  
+
+//   if (pass !== confirmPass) {
+//     alert("Passwords do not match!");
+//     return;
+//   }
+ 
+
+  // Save to localStorage (optional)
+//   localStorage.setItem("userEmail", email);
+
+  // Redirect
+  window.location.href = "./home.html";
+});
+</script>
+
+
+</html>

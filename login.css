@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%; 
+    transition:all ease-in-out 0.3s;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.hero{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/unfocused-restaurant-with-tidy-tables.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.box{
+    width: 30%;
+    height: 80%;
+    background: #010529;
+    color:#fff;  
+    border-radius:0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight: 600;
+}
+.logo span{
+    color:#ffb806;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.input{
+    width: 80%;
+    height:30px;
+    border-radius: 0.2rem;
+    margin:0 auto;
+    outline: none;
+    border:1px dashed #010529;
+    padding: 0.5rem;
+    transition:all ease-in-out 0.3s;
+}
+.input:hover{
+    height: 50px;
+}
+.snbtn{
+    width:40%;
+    height: 30px;
+    margin:0 auto;
+    border-radius: 0.2rem;
+    border: none;
+    background: #ffb806;
+    color:#010529;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,132 @@
+.hero {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 15vh; 
+    padding: 1rem 3rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* ==== Main Section ===== */
+.hero label{
+    font-weight: 600;
+    color:#010529;
+}
+ 
+.hero h4{
+    text-align: center;
+}
+/* ====== Attendence Table ======= */
+/* --- Search ---- */
+.datas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dbox{
+    width: 25%;
+    height: 50px;
+    background: #ffb806;
+}
+.heading{
+    width: 100%; 
+}
+.heading input{
+    border: none;
+    background: #ffb806;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color:#fff;
+    font-weight: 600;
+}
+
+.table-data{
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    /* border: 2px solid #ffb809; */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.5rem ;
+    row-gap:0.5rem;
+}  
+.table h4{
+    color:#ffb806;
+    background:#010529;
+    width: 100%;
+    text-align: center;
+    padding:0.5rem;
+}
+.tbl{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.ht th{ 
+    background: #010529;
+    color:#fff;
+}
+.table td{
+    padding: 0.3rem;
+}
+.table input{
+    cursor: pointer;
+}
+/* ====== Footer ======== */
+.ftr {
+    width: 100vw;
+    height: 40vh;
+    background: #1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftr span {
+    color: #ffb806;
+}
+
+.ftr i {
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.ftr i:hover {
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+}
+
+.ft-links {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ft-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ft-links a:hover {
+    color: #ffb806;
+}
+
+.ftr p {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ======= Complete ======= */

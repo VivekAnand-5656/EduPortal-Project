@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal || Sign Up</title> 
+    <link rel="stylesheet" href="sign.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="hero">
+         
+        <div class="box">
+            <a class="logo"  href="#">Edu<span>Portal</span></a>
+            <h4>Register your account</h4>
+            <form action="" class="form" id="signupForm">
+                <input type="email" class="input" name="Email" id="email" placeholder="Enter Your Email" required>
+                <input type="password" class="input" name="password" id="password" placeholder="Choose Password" required>
+                <input type="password" class="input" name="password" id="conf-password" placeholder="Confirm Password" required>
+               
+                <label for="checkbox"> <input type="checkbox" name="checkbox" value="checkbox" id="checkbox" required> Accept our <a href="">Term & Conditions</a> </label>
+               <button type="submit" class="snbtn" >Sign Up</button> 
+                <p>have an account ? <a href="./login.html">login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+
+  
+  const email = document.getElementById("email").value;
+  const pass = document.getElementById("password").value;
+  const confirmPass = document.getElementById("conf-password").value;
+  const checkbox = document.getElementById("checkbox").checked;
+
+  if (pass !== confirmPass) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  if (!checkbox) {
+    alert("You must accept terms & conditions");
+    return;
+  }
+
+  // Save to localStorage (optional)
+  localStorage.setItem("userEmail", email);
+
+  // Redirect
+  window.location.href = "./home.html";
+});
+</script>
+
+
+</html>

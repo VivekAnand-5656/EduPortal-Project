@@ -1,0 +1,213 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+.hero{
+    width: 100vw;
+    height:calc(100vh - 15vh);
+    margin-top: 15vh;
+    display: flex;
+    justify-content:center; 
+    padding:0rem 3rem;
+}
+.h-left{
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 1rem;
+    animation:frondShow forwards 1.2s ;
+}
+.h-left h1{
+    font-size:3rem;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#010529;
+}
+.h-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:frondShowRight forwards 1.1s ;
+}
+.imgbox{
+    width: 70%;
+    height: 80%;
+    background: #ffb806;
+    border-radius:50%;
+    border:15px ridge #010529;
+    padding:0.5rem;
+}
+.h-right img{
+    width: 100%;
+    height: 100%; 
+    border-radius:50%;
+    /* border-radius:0 50%; */
+}
+.get{
+    width: 30%;
+    height: 50px; 
+    border:none;
+    /* background:#010529; */
+    background-image: linear-gradient(to right, #010529, #00144d, #001b74, #001f9a, #071ec1);
+    color:#fff;
+    font-weight: 600;
+    border-radius:0.2rem;
+    transition:all ease-in-out 0.4s;
+}
+.get:hover{
+    background: none; 
+    background-image: linear-gradient(to right, #071ec1, #001f9a, #001b74, #00144d, #010529);
+    color:#fff;
+}
+@keyframes frondShow {
+    0%{
+        /* transform:translate(-50%); */
+        transform:scale(0);
+    }
+    100%{
+        /* transform: translate(0%); */
+        transform: scale(1);
+    }
+}
+@keyframes frondShowRight {
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* ========== Quick Access ============= */
+.ac{
+    text-align: center;
+    font-size:2rem;
+    background: #010529;
+    color:#fff;
+    padding: 0.9rem 0.5rem;
+}
+.access{
+    width: 100vw;
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem;
+    background: #ffb806;
+}
+.box{
+    width:20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:0.5rem;
+    padding:0.5rem; 
+    background: #fff;
+    transition:all ease-in-out 0.1s;
+}
+.box:hover{
+    border:3px dashed #010529;
+}
+.box img{
+    width: 100%;
+    height: 60%;
+    border-radius:0.5rem;
+}
+.box a{
+    text-decoration: none;
+    border: none;
+    background: #010529;
+    color:#fff;
+    padding:0.3rem;
+    border-radius:0.2rem;
+    text-align: center;
+    transition:all ease-in-out 0.3s;
+}
+.box a:hover{
+    background: none;
+    border:2px solid #010529;
+    color:#010529;
+}
+/* ======== Stats ========= */
+.stats{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+}
+.st-box{
+    width: 15%;
+    height: 25vh;
+    background: #c7c5c5; 
+    border-radius:10px;
+    padding:0.2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s;
+}
+.st-box:hover{
+    transform:scale(1.1);
+}
+.st-box p{
+    font-size:1.5rem;
+    font-weight: 800;
+}
+.st-box h3{
+    font-size:1.5rem;
+    text-align: center;
+}
+/* ====== Footer ======== */
+.ftr{
+    width: 100vw;
+    height: 40vh;
+    background:#1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.ftr span{
+    color:#ffb806;
+}
+.ftr i{
+    color:#fff;
+    padding:0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s;
+}
+.ftr i:hover{
+    border-radius:5px;
+    background: #fff;
+    color:#000;
+}
+.ft-links{
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.ft-links a{
+    text-decoration: none;
+    color:#fff;
+}
+.ft-links a:hover{
+    color:#ffb806;
+}
+.ftr p{
+    color:#fff;
+    text-decoration: underline;
+}
+/* ======= Complete ======= */

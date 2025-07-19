@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal || Home</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg" style="padding: 0.5rem 4rem; position: fixed;">
+    <div class="container-fluid navi">
+        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+                <li class="nav-item active">
+                    <a class="nav-link  text-white" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./teacher.html">Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./student.html">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./notes.html">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./attendence.html">Attendence</a>
+                </li>
+            </ul>
+            <form class="d-flex btns"> 
+                <a class="btn btn-outline-success" href="./index.html" target="_blank" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- ------- Hero section -------- -->
+<main>
+    <div class="hero" id="hero">
+        <div class="h-left">
+            <h1>Simplify Your School Management Today</h1>
+            <p>Track attendance, manage notes, and organize records effortlessly.</p>
+            <button class="get">Get Started</button>
+        </div>
+        <div class="h-right">
+            <div class="imgbox">
+                <img src="./images/front.png" alt="front">
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ======== Quick Access ======= -->
+
+<h4 class="ac">Quick Access</h4>
+<div class="access">
+    <div class="box">
+        <img src="./images/teacher.jpg" alt="Teacher">
+        <h4>Teachers</h4>
+        <label for="">Manage Teacher Records and Subjects.</label>
+        <a href="">Go to Teachers</a>
+    </div>
+    <div class="box">
+        <img src="./images/student.jpg" alt="Students">
+        <h4>Students</h4>
+        <label for="">Add, edit, and view student details.</label>
+        <a href="">Go to Students</a>
+    </div>
+    <div class="box">
+        <img src="./images/notes.jpg" alt="Notes">
+        <h4>Notes</h4>
+        <label for="">Upload and share study material.</label>
+        <a href="">Go to Notes</a>
+    </div>
+    <div class="box">
+        <img src="./images/attendence.jpg" alt="Attendence">
+        <h4>Attendence</h4>
+        <label for="">Mark and monitor daily attendance</label>
+        <a href="">Go to Attendence</a>
+    </div>
+</div>
+<!-- ======== Stats Summary ========== -->
+<div class="stats">
+    <div class="st-box">
+        <p id="teacher">222</p>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Total Teachers</h3>
+    </div>
+    <div class="st-box">
+        <p student>222</p>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Total Students</h3>
+    </div>
+    <div class="st-box">
+        <p id="Notes">222</p>
+        <i class="fa-solid fa-book-open-reader"></i>
+        <h3>Total Notes</h3>
+    </div>
+    <div class="st-box">
+        <p id="atten">22</p>
+        <i class="fa-solid fa-table"></i>
+        <h3>Total Attendence</h3>
+    </div>
+</div>
+<!-- ======== Footer ======= -->
+<footer>
+    <div class="ftr">
+        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="ft-links">
+            <a href="./index.html">Home</a>
+            <a href="./teacher.html">Teachers</a>
+            <a href="./student.html">Students</a>
+            <a href="./notes.html">Notes</a>
+            <a href="./attendence.html">Attendence</a>
+        </div>
+        <hr>
+        <p>© 2025 EduPortal | All Rights Reserved</p>
+    </div>
+</footer>
+<!-- ======= Complete ========= -->
+ 
+
+</body>
+<script></script>
+
+</html>

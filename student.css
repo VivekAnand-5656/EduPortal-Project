@@ -1,0 +1,158 @@
+.hero {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.form {
+    width: 40%;
+    border: 1px solid #010529;
+    background: #ffb806;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+.form input {
+    outline: none;
+    border: 1px solid #010529;
+    width: 100%;
+    height: 10%;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
+.form select {
+    outline: none;
+    height: 10%;
+    border-radius: 0.2rem;
+    border: 1px solid #010529;
+    transition: all ease-in-out 0.3s;
+}
+
+.form option {
+    background: #010529;
+    color: #fff;
+}
+
+/* ====== Student Table ======= */
+/* --- Search ---- */
+
+.table{
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.5rem ;
+    row-gap:0.5rem;
+}
+.search{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+.search input{
+    border:2px solid #ffb806;
+    width:80%;
+}
+.btn-search{
+    width: 20%;
+    border: none;
+    border-radius:0.3rem;
+    background: #ffb806;
+    font-weight: 600;
+    color:#fff;
+}
+.btn-search:active{
+    background: #010529;
+}
+.table h1{
+    color:#ffb806;
+    background:#010529;
+    width: 100%;
+    text-align: center;
+    padding:0.5rem;
+}
+.table-data{
+    width: 60%;
+    border:1px solid #010529; 
+    text-align: center;
+}
+.table td{
+    padding: 0.3rem;
+}
+.tb-btn{
+    border: none; 
+    padding:0.2rem;
+    border-radius:0.2rem;
+    font-weight: 600; 
+}
+.tb-btn:nth-child(1){
+    background:#0921fb;
+    color:#fff;
+}
+.tb-btn:nth-child(2){
+    background: red;
+    color:#fff;
+}
+/* ====== Footer ======== */
+.ftr{
+    width: 100vw;
+    height: 40vh;
+    background:#1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.ftr span{
+    color:#ffb806;
+}
+.ftr i{
+    color:#fff;
+    padding:0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s;
+}
+.ftr i:hover{
+    border-radius:5px;
+    background: #fff;
+    color:#000;
+}
+.ft-links{
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.ft-links a{
+    text-decoration: none;
+    color:#fff;
+}
+.ft-links a:hover{
+    color:#ffb806;
+}
+.ftr p{
+    color:#fff;
+    text-decoration: underline;
+}
+/* ======= Complete ======= */

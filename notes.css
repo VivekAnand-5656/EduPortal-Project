@@ -1,0 +1,225 @@
+.hero {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===== Form ===== */
+.form {
+    width: 30%;
+    height: 80vh;
+    border-radius: 0.5rem;
+    background: #c5c4c4;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+.note {
+    width: 100%;
+    outline: none;
+    border: 2px solid #010529;
+    padding: 0.2rem;
+    transition: all ease-in-out 0.3s;
+    border-radius: 0.2rem;
+}
+
+.add-btn {
+    width: 30%;
+    margin: auto;
+    border: none;
+    background: #002fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.add-btn:active {
+    background: #ffb806;
+}
+
+/* --- File Upload ---- */
+.upload-box {
+    border: 2px dashed #010529;
+    border-radius: 8px;
+    padding: 0.5rem;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 1.5rem;
+    color: #0b9aff;
+    margin-bottom: 10px;
+}
+
+.browse-btn {
+    background-color: #0b9aff;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.drop-text {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.file-info {
+    color: #444;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.star {
+    color: red;
+}
+
+/* ======= PDF Data ====== */
+.cards {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #010529;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.box {
+    width: 15%;
+    height: 40vh;
+    background: #a3a4a6; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem; 
+    text-align: center;
+}
+.box h2{
+    font-size:1rem;
+}
+.box p{
+    font-size:1rem;
+}
+.box img{
+    width: 40%;
+    margin: auto;
+}
+.pdf-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pdf-btns a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.1rem;
+    background: #ffb806;
+    width: 20%;
+    border-radius: 0.5rem;
+    margin: auto;
+    text-align: center;
+    font-size:1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.pdf-btns a:hover {
+    background: #010529; 
+}
+
+.box button {
+    border: none;
+    height: 30px;
+    background: #fff;
+    width: 25%;
+    margin: auto;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size:1rem;
+}
+
+/* ====== Footer ======== */
+.ftr {
+    width: 100vw;
+    height: 40vh;
+    background: #1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftr span {
+    color: #ffb806;
+}
+
+.ftr i {
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.ftr i:hover {
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+}
+
+.ft-links {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ft-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ft-links a:hover {
+    color: #ffb806;
+}
+
+.ftr p {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ======= Complete ======= */

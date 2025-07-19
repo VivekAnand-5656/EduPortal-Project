@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+ 
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('./images/landing.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons .btn,
+.buttons .btn-outline {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #00c2ff;
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #00c2ff;
+  color: #00c2ff;
+}
+
+.btn:hover, .btn-outline:hover {
+  opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Footer ======== */
+.ftr {
+    width: 100vw;
+    height: 40vh;
+    background: #1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftr span {
+    color: #ffb806;
+}
+
+.ftr i {
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.ftr i:hover {
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+}
+
+.ft-links {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ft-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ft-links a:hover {
+    color: #ffb806;
+}
+
+.ftr p {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ======= Complete ======= */

@@ -1,0 +1,146 @@
+.hero {
+    width: 100vw;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.form {
+    width: 40%;
+    border: 1px solid #010529;
+    background: #ffb806;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+.form input {
+    outline: none;
+    border: 1px solid #010529;
+    width: 100%;
+    height: 10%;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
+.form select {
+    outline: none;
+    height: 10%;
+    border-radius: 0.2rem;
+    border: 1px solid #010529;
+    transition: all ease-in-out 0.3s;
+}
+
+.form option {
+    background: #010529;
+    color: #fff;
+}
+
+.sub-btn {
+    width: 30%;
+    height: 50px;
+    border: none;
+    margin: auto;
+    border-radius: 0.3rem;
+    background: #010529;
+    color: #fff;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+
+.sub-btn:hover {
+    background: #fff;
+    border: 2px solid #010529;
+    color: #010529;
+}
+
+.cross { 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+.cross:active{
+    color:red;
+}
+/* ====== Teacher Table ======= */
+.table{
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.5rem ;
+}
+.table h1{
+    color:#ffb806;
+    background:#010529;
+    width: 100%;
+    text-align: center;
+    padding:0.5rem;
+}
+.table-data{
+    width: 50%;
+    border:1px solid #010529; 
+    text-align: center;
+}
+/* ====== Footer ======== */
+.ftr{
+    width: 100vw;
+    height: 40vh;
+    background:#1a1b1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.ftr span{
+    color:#ffb806;
+}
+.ftr i{
+    color:#fff;
+    padding:0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s;
+}
+.ftr i:hover{
+    border-radius:5px;
+    background: #fff;
+    color:#000;
+}
+.ft-links{
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.ft-links a{
+    text-decoration: none;
+    color:#fff;
+}
+.ft-links a:hover{
+    color:#ffb806;
+}
+.ftr p{
+    color:#fff;
+    text-decoration: underline;
+}
+/* ======= Complete ======= */

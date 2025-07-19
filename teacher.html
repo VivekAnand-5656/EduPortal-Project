@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal || Teacher</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<nav class="navbar  navbar-expand-lg" style="padding: 0.5rem 4rem; position: fixed;">
+    <div class="container-fluid navi">
+        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+                <li class="nav-item">
+                    <a class="nav-link  text-white" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="./teacher.html">Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./student.html">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="./notes.html">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="./attendence.html">Attendence</a>
+                </li>
+            </ul>
+            <form class="d-flex btns">
+                <a class="btn btn-outline-success" href="./index.html" target="_blank" id="logoutBtn">Log out <i
+                        class="fa-solid fa-right-from-bracket"></i></a>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- ========= Teacher Forms  -->
+<main>
+    <div class="hero">
+        <form class="form" id="form" action="">
+            <i class="fa-solid cross fa-square-xmark"></i>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="name" name="Name" placeholder="Enter Full Name" required>
+            <label for="Subject">Subject</label>
+            <select name="Subject" id="subject">
+                <option value="" selected>---- Subject ------</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="Social Science">Social Science</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Sanskrit">Snskrit</option>
+            </select>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="gender" selected>---- Gender ------</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="female">Transgender</option>
+            </select>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" placeholder="Enter email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="Number" id="number" placeholder="Enter Phone Number" required>
+            <button id="submit" class="sub-btn" type="submit">Add</button>
+            <p id="addMsg"></p>
+        </form>
+    </div>
+    <!-- ======== Teachers Table Data ========== -->
+    <div class="table">
+        <h1>Teacher's Lists</h1>
+        <table id="tbl-data" class="table-data">
+
+            <thead>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody id="tb-body" class="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Omkar Pandey</td>
+                    <td>Math</td>
+                    <td>Male</td>
+                    <td>Email ID</td>
+                    <td>7485965869</td>
+                </tr>  -->
+            </tbody>
+        </table>
+    </div>
+</main>
+<!-- ======== Footer ======= -->
+<footer>
+    <div class="ftr">
+        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="ft-links">
+            <a href="./home.html">Home</a>
+            <a href="./teacher.html">Teachers</a>
+            <a href="./student.html">Students</a>
+            <a href="./notes.html">Notes</a>
+            <a href="./attendence.html">Attendence</a>
+        </div>
+        <hr>
+        <p>© 2025 EduPortal | All Rights Reserved</p>
+    </div>
+</footer>
+<!-- ===== JS ===== -->
+<script src="teacher.js"></script>
+</body>
+
+</html>
