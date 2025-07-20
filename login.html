@@ -23,30 +23,12 @@
                 
                <button type="submit" class="snbtn" >Log In</button>  
             </form>
+            <p>don't have an account ? <a href="./sign.html">sign up</a></p>
+            <p id="almsg" class="msg"></p>
         </div>
     </div>
 </body>
-<script>
-document.getElementById("loginForm").addEventListener("submit", function(e) {
-  e.preventDefault(); 
-
-  
-  const email = document.getElementById("email").value;
-  const pass = document.getElementById("password").value;  
-
-//   if (pass !== confirmPass) {
-//     alert("Passwords do not match!");
-//     return;
-//   }
- 
-
-  // Save to localStorage (optional)
-//   localStorage.setItem("userEmail", email);
-
-  // Redirect
-  window.location.href = "./home.html";
-});
-</script>
+<script src="login.js"></script>
 
 
 </html>

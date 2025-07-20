@@ -1,6 +1,5 @@
 .hero {
-    width: 100vw;
-    height: 85vh;
+    width: 100vw; 
     margin-top: 15vh;
     display: flex;
     justify-content: center;
@@ -13,9 +12,10 @@ body::-webkit-scrollbar {
 
 .form {
     width: 40%;
+    height:90vh;
     border: 1px solid #010529;
     background: #ffb806;
-    padding: 0.5rem;
+    padding:1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 
 .form select {
     outline: none;
-    height: 10%;
+    height: 30px;
     border-radius: 0.2rem;
     border: 1px solid #010529;
     transition: all ease-in-out 0.3s;
@@ -49,13 +49,24 @@ body::-webkit-scrollbar {
     background: #010529;
     color: #fff;
 }
+.stBtn{
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    border: none;
+    background: #010529;
+    color:#fff;
+    font-weight: 600;
+    padding:0.5rem 0rem;
+    border-radius: 0.2rem;
+}
 
 /* ====== Student Table ======= */
 /* --- Search ---- */
 
 .table{
     width: 100vw;
-    height: auto; 
+    height: ; 
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -91,13 +102,23 @@ body::-webkit-scrollbar {
     padding:0.5rem;
 }
 .table-data{
-    width: 60%;
+    width: 70%;
     border:1px solid #010529; 
     text-align: center;
 }
+.table th{
+    background: #010529;
+    color:#fff;
+    padding:0.3rem;
+}
 .table td{
     padding: 0.3rem;
+    color:#1a7d04;
+    font-weight: 500;
 }
+.table-data tr:nth-child(odd){
+    background: #c2c2c28e;
+} 
 .tb-btn{
     border: none; 
     padding:0.2rem;

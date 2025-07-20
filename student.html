@@ -40,7 +40,7 @@
                 </li>
             </ul>
             <form class="d-flex btns"> 
-                <a class="btn btn-outline-success" href="./index.html" target="_blank" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
+                <a class="btn btn-outline-success" href="./index.html" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
             </form>
         </div>
     </div>
@@ -48,13 +48,13 @@
 <!-- ======= Student Forms =========== -->
 <main>
     <div class="hero">
-        <form class="form" action="">
+        <form class="form" id="form" action="">
             <label for="name">Name</label>
             <input type="text" name="Name" id="name" placeholder="Enter Full Name" required>
             <label for="roll">Roll NO.</label>
-            <input type="number" name="number" id="number" placeholder="Enter Roll No." required>
+            <input type="number" name="number" id="roll" placeholder="Enter Roll No." required>
             <label for="class">Class</label>
-            <select name="class" id="class" required>
+            <select name="class" id="clas" required>
                 <option value="class" selected>---- Class ----</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -80,6 +80,8 @@
             <input type="tel" name="Number" id="number" placeholder="Enter Phone Number" required>
             <label for="mail">Email</label>
             <input type="email" name="Email" id="email" placeholder="Enter Email ID" required>
+            <p id="addMsg"></p>
+            <button type="submit" class="stBtn">Add</button>
         </form>
     </div>
      <!-- ======== Student Table Data ========== -->
@@ -96,40 +98,27 @@
                     <th>Sr.No.</th>
                     <th>Name</th>
                     <th>Roll No.</th>
-                    <th>Gender</th>
                     <th>Class</th>
+                    <th>Gender</th>
                     <th>Contact</th>
                     <th>Email</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody id="tb-body" class="tbody">
-                <tr>
+                <!-- <tr>
                     <td>1</td>
                     <td>Omkar Pandey</td>
                     <td>101</td>
-                    <td>Male</td>
                     <td>12</td>
-                    <td>7485965869</td>
-                    <td>vivek@gmail.com</td>
-                    <td>
-                        <button class="tb-btn" id="edit" >Edit</button>
-                        <button class="tb-btn" id="delete" >Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Omkar Pandey</td>
-                    <td>101</td>
                     <td>Male</td>
-                    <td>10</td>
                     <td>7485965869</td>
                     <td>vivek@gmail.com</td>
                     <td>
                         <button class="tb-btn" id="edit" >Edit</button>
                         <button class="tb-btn" id="delete" >Delete</button>
                     </td>
-                </tr>
+                </tr>  -->
             </tbody>
         </table>
     </div>
@@ -157,4 +146,5 @@
 </footer>
     
 </body>
+<script src="student.js"></script>
 </html>

@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
 }
 
 .box {
-    width: 15%;
+    width:150px;
     height: 40vh;
     background: #a3a4a6; 
     display: flex;

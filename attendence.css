@@ -66,17 +66,32 @@ body::-webkit-scrollbar {
     width: 60%;
     margin: auto;
     text-align: center;
+    border:2px solid #010529;
 }
 
 .ht th{ 
     background: #010529;
     color:#fff;
 }
+.tbl tr:nth-child(odd){
+    background: #c2c0c0;
+}
 .table td{
     padding: 0.3rem;
+    border-right:1px dashed #010529;
+    color:#178202;
+    font-weight: 500;
 }
 .table input{
     cursor: pointer;
+}
+.submit{
+    border: none;
+    padding:0.5rem;
+    background: #010529;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 0.2rem;
 }
 /* ====== Footer ======== */
 .ftr {

@@ -42,7 +42,7 @@
                 </li>
             </ul>
             <form class="d-flex btns"> 
-                <a class="btn btn-outline-success" href="./index.html" target="_blank" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
+                <a class="btn btn-outline-success" href="./index.html" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
             </form>
         </div>
     </div>
@@ -58,7 +58,8 @@
                 <input type="date" name="date" id="date">
                 <h4>Student Attendence</h4>
             </div>
-            <table id="" class="tbl">
+           <form action="" id="form">
+             <table id="" class="tbl">
                 <thead class="ht">
                     <tr>
                         <th>Roll No.</th>
@@ -68,23 +69,19 @@
                         <th>Leave</th> 
                     </tr>
                 </thead>
-                <tbody id="" class="tbody">
-                    <tr>
+                <tbody id="tb-body" class="tbody">
+                    <!-- <tr>
                         <td>101</td>
                         <td>Omkar Pandey</td>
                         <td><input type="radio" name="attendance1" value="present"></td>
                         <td><input type="radio" name="attendance1" value="present"></td>
                         <td><input type="radio" name="attendance1" value="present"></td>
-                    </tr>
-                     <tr>
-                        <td>101</td>
-                        <td>Omkar Pandey</td>
-                        <td><input type="radio" name="attendance2" value="present"></td>
-                        <td><input type="radio" name="attendance2" value="present"></td>
-                        <td><input type="radio" name="attendance2" value="present"></td>
-                    </tr>
+                    </tr>  -->
                 </tbody>
             </table>
+                        <button type="submit" class="submit">Submit Attendance</button>
+
+           </form>
         </div>
     </div>
 </main>
@@ -110,5 +107,7 @@
     </div>
 </footer>
 </body>
+<script src="./attendence.js">
 
+</script>
 </html>

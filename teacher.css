@@ -96,9 +96,35 @@ body::-webkit-scrollbar {
     padding:0.5rem;
 }
 .table-data{
-    width: 50%;
-    border:1px solid #010529; 
+    width: 80%;
+    border:2px solid #010529; 
     text-align: center;
+}
+.table-data th{
+    background: #010529;
+    border-right:1px dashed #ffb806; 
+    color:#fff;
+}
+.table-data td{
+    color:#176c03;
+    font-weight: 500;
+    text-align: justify;
+    border-right:1px dashed #010529; 
+    padding: 0.5rem;
+}
+.table-data td:nth-child(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delbtn{
+    border: none;
+    border-radius: 0.2rem;
+    background:red;
+    color:#fff;
+    font-weight: 600;
+    padding: 0.2rem;
+    margin: auto;
 }
 /* ====== Footer ======== */
 .ftr{

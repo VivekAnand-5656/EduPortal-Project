@@ -17,45 +17,20 @@
         <div class="box">
             <a class="logo"  href="#">Edu<span>Portal</span></a>
             <h4>Register your account</h4>
-            <form action="" class="form" id="signupForm">
+            <form action="" class="form" id="signupForm"> 
+              <input type="text" name="Name" class="input" id="name" placeholder="Enter Full Name" required>
                 <input type="email" class="input" name="Email" id="email" placeholder="Enter Your Email" required>
+                <input type="tel" name="Number" class="input" id="number" placeholder="Enter Phone Number" required>
                 <input type="password" class="input" name="password" id="password" placeholder="Choose Password" required>
                 <input type="password" class="input" name="password" id="conf-password" placeholder="Confirm Password" required>
                
                 <label for="checkbox"> <input type="checkbox" name="checkbox" value="checkbox" id="checkbox" required> Accept our <a href="">Term & Conditions</a> </label>
                <button type="submit" class="snbtn" >Sign Up</button> 
                 <p>have an account ? <a href="./login.html">login</a></p>
+                <p class="msg" id="almsg"></p>
             </form>
         </div>
     </div>
 </body>
-<script>
-document.getElementById("signupForm").addEventListener("submit", function(e) {
-  e.preventDefault(); 
-
-  
-  const email = document.getElementById("email").value;
-  const pass = document.getElementById("password").value;
-  const confirmPass = document.getElementById("conf-password").value;
-  const checkbox = document.getElementById("checkbox").checked;
-
-  if (pass !== confirmPass) {
-    alert("Passwords do not match!");
-    return;
-  }
-
-  if (!checkbox) {
-    alert("You must accept terms & conditions");
-    return;
-  }
-
-  // Save to localStorage (optional)
-  localStorage.setItem("userEmail", email);
-
-  // Redirect
-  window.location.href = "./home.html";
-});
-</script>
-
-
+<script src="sign.js"></script>
 </html>
