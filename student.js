@@ -11,7 +11,7 @@ let logout = document.getElementById("logoutBtn");
 let tableBody = document.getElementById("tb-body");
 
 let data = [];
-let store = localStorage.getItem("student") || [];
+let store = localStorage.getItem("student");
 let count;
 let numStudent = localStorage.getItem("numStudent");
 if (store) {
