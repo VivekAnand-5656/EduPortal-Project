@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduPortal || Landing</title>
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="land.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -16,31 +16,12 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 </head>
-<nav class="navbar  navbar-expand-lg" style="padding: 0.5rem 4rem; position: fixed;">
-    <div class="container-fluid navi" style="display: flex; justify-content:space-between; align-items: center;">
-        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="transform: translate(80%);">
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
-                <li class="nav-item active">
-                    <a class="nav-link  text-white" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./teacher.html">Teachers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./student.html">Students</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./notes.html">Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./attendence.html">Attendence</a>
-                </li>
-            </ul> -->
+<nav class="navbar  navbar-expand-lg" style="padding: 0.5rem; position: fixed;">
+    <div class="container-fluid navi" style="position: relative;">
+        <a class="navbar-brand logo " style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+        
+        <button class="togler" id="hamburgar"> ☰</button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
             <form class="d-flex btns">
                 <a class="btn btn-outline-success" href="./sign.html">Sign Up</a>
                 <a class="btn btn-outline-success" href="./login.html">Login</a>
@@ -104,5 +85,12 @@
 </footer>
 
 </body>
+<script>
+     const toggler = document.getElementById('hamburgar');
+    const collapse = document.getElementById('navbarTogglerDemo02');
 
+    toggler.addEventListener('click', () => {
+        collapse.classList.toggle('show');
+    });
+</script>
 </html>

@@ -8,14 +8,14 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
 let email = document.getElementById("email").value;
 let pass = document.getElementById("password").value;
-    let isLogin = false;
+    let isLogin = false; 
     arr.forEach(element => {
         if(element.gmail === email && element.crPass == pass){
             isLogin = true;
         } 
     });
-    if(isLogin){
-        alert("Login Successfully");
+    if(isLogin){ 
+        alert("Login Successfully"); 
         window.location.href = "./home.html";
     } else{ 
         msg.textContent="Incorrect email or password";

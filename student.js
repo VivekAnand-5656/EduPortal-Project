@@ -7,6 +7,11 @@ let number = document.getElementById("number");
 let mail = document.getElementById("email");
 let alertmsg = document.getElementById("addMsg");
 let logout = document.getElementById("logoutBtn");
+let userName = document.getElementById("userName");
+let currentUser = localStorage.getItem("currentUser");
+if(currentUser){
+    userName.textContent=currentUser;
+}
 // ==== Table ====
 let tableBody = document.getElementById("tb-body");
 
@@ -76,6 +81,9 @@ function delet(index){
 
 }
 // ==== Logout ====
-logout.addEventListener("click",()=>{
-  confirm("Are you sure to want to logout ? ");  
-})
+     const toggler = document.getElementById('hamburgar');
+    const collapse = document.getElementById('navbarTogglerDemo02');
+
+    toggler.addEventListener('click', () => {
+        collapse.classList.toggle('show');
+    });

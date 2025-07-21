@@ -8,6 +8,7 @@ let confirmPass = document.getElementById("conf-password");
 let checkbox = document.getElementById("checkbox");
 let msg = document.getElementById("almsg");
 
+
 let persons = [];
 // ==== local get ===
 let storeUser = localStorage.getItem("user");
@@ -49,6 +50,7 @@ signupForm.addEventListener("submit", function (e) {
 
     // Save to localStorage (optional)
     localStorage.setItem("user",JSON.stringify(persons));
+    localStorage.setItem("currentUser",JSON.stringify(person.perName));
     
     signupForm.reset();
     // Redirect

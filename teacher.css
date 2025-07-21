@@ -170,3 +170,31 @@ body::-webkit-scrollbar {
     text-decoration: underline;
 }
 /* ======= Complete ======= */
+/* ==== Mobile View ==== */
+@media screen and (max-width: 768px) {
+    .hero{
+        padding: 0.5rem;
+    }
+    .form{
+        width: 90%;
+        height: auto;
+    } 
+    .table{
+        overflow: scroll;
+    } 
+     .ftr{
+        height: auto;
+    }
+    .ft-links{
+        width: 100%;
+        flex-direction: column;
+    }
+    .icons{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

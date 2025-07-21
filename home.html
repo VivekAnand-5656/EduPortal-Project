@@ -17,12 +17,9 @@
 </head>
 <body>
     <nav class="navbar  navbar-expand-lg" style="padding: 0.5rem 4rem; position: fixed;">
-    <div class="container-fluid navi">
+    <div class="container-fluid navi" style="display: flex; justify-content: center; align-items: center;">
         <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+       <button class="togler" id="hamburgar"> ☰</button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
                 <li class="nav-item active">
@@ -42,6 +39,10 @@
                 </li>
             </ul>
             <form class="d-flex btns"> 
+                <div class="user">
+                    <p id="userName" class="userName"></p>
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
                 <a class="btn btn-outline-success" href="./index.html" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
             </form>
         </div>
@@ -109,12 +110,7 @@
         <p id="notes"></p>
         <i class="fa-solid fa-book-open-reader"></i>
         <h3>Total Notes</h3>
-    </div>
-    <div class="st-box">
-        <p id="atten">22</p>
-        <i class="fa-solid fa-table"></i>
-        <h3>Total Attendence</h3>
-    </div>
+    </div> 
 </div>
 <!-- ======== Footer ======= -->
 <footer>

@@ -4,10 +4,15 @@ let studentData = store ? JSON.parse(store) : [];
 let table = document.getElementById("tb-body");
 let form = document.getElementById("form");
 let date = document.getElementById("date");
+let userName = document.getElementById("userName");
+let currentUser = localStorage.getItem("currentUser");
+if(currentUser){
+    userName.textContent=currentUser;
+}
 
 let logout = document.getElementById("logoutBtn");
 
-
+let count =0;
 function addTable() {
     table.innerHTML = "";
     studentData.forEach((element, index) => {
@@ -58,6 +63,9 @@ form.addEventListener("submit", (ev) => {
     form.reset();
 })
 // ==== Logout ====
-logout.addEventListener("click", () => {
-    confirm("Are you sure to want to logout ? ");
-});
+     const toggler = document.getElementById('hamburgar');
+    const collapse = document.getElementById('navbarTogglerDemo02');
+
+    toggler.addEventListener('click', () => {
+        collapse.classList.toggle('show');
+    });

@@ -77,3 +77,9 @@ form{
 .msg{
     color:red;
 }
+/* === Mobile View == */
+@media screen and (max-width: 768px){
+    .box{
+        width: 90%;
+    }
+}

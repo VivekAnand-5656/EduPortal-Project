@@ -1,4 +1,4 @@
-*{
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,14 +48,15 @@ ul a{
 
 }
 .btns{
-    gap:0.5rem;
+    gap:0.5rem; 
 } 
- 
+
 .btn:nth-child(1){
     background: #ffb806;
     border:none;
     color:#000;
     font-weight:600;
+    text-align: center;
     transition:all ease-in-out 0.3s;
 }
 .btn:nth-child(1):hover{
@@ -69,6 +70,7 @@ ul a{
     border:2px solid #ffb806;
     color:#fff;
     font-weight:600;
+    text-align: center;
     transition:all ease-in-out 0.3s;
 }
 .btn:nth-child(2):hover{
@@ -76,4 +78,71 @@ ul a{
     border:none;
     color:#000;
     font-weight:600;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    gap: 0.5rem;
+}
+.userName{
+    font-size:1rem;
+    margin: auto;
+    color:#0bffde;
+    font-weight: 500;
+}
+.togler{
+    color:#fff;
+    background: none;
+    padding: 0.5rem;
+    border:none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}  
+
+
+@media screen and (max-width: 768px) {
+    .navbar { 
+        flex-direction: column;
+        justify-content: center;
+        align-items:center; 
+    }  
+
+    .togler {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1000;
+    }
+
+
+    .collapse {
+        display: none;
+        flex-direction: column;
+        background: #010529;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 8px;  
+
+    }
+
+    .collapse.show {
+        display: flex;
+    }
+
+    .btns {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.8rem;  
+    }
+
+    .btns a {
+        width: 100%;
+        text-align: left;
+    }
 }

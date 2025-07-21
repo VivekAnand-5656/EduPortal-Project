@@ -15,99 +15,103 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 </head>
+
 <body>
     <nav class="navbar  navbar-expand-lg" style="padding: 0.5rem 4rem; position: fixed;">
-    <div class="container-fluid navi">
-        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
-                <li class="nav-item">
-                    <a class="nav-link  text-white" aria-current="page" href="./home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./teacher.html">Teachers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./student.html">Students</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white " href="./notes.html">Notes</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="./attendence.html">Attendence</a>
-                </li>
-            </ul>
-            <form class="d-flex btns"> 
-                <a class="btn btn-outline-success" href="./index.html" id="logoutBtn">Log out <i class="fa-solid fa-right-from-bracket"></i></a>
-            </form>
-        </div>
-    </div>
-</nav>
-<!-- ====== Main Section ======= -->
-<main>
-    <div class="hero">
-
-        <div class="table"> 
-            
-            <div class="heading">
-                <label for="date">Select Date</label>
-                <input type="date" name="date" id="date">
-                <h4>Student Attendence</h4>
+        <div class="container-fluid navi">
+            <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+            <button class="togler" id="hamburgar"> ☰</button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./teacher.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./student.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="./notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="./attendence.html">Attendence</a>
+                    </li>
+                </ul>
+                <form class="d-flex btns">
+                    <div class="user">
+                        <p id="userName" class="userName"></p>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <a class="btn btn-outline-success" href="./index.html" id="logoutBtn">Log out <i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </form>
             </div>
-           <form action="" id="form">
-             <table id="" class="tbl">
-                <thead class="ht">
-                    <tr>
-                        <th>Roll No.</th>
-                        <th>Student Name</th>
-                        <th>Present</th>
-                        <th>Absent</th>
-                        <th>Leave</th> 
-                    </tr>
-                </thead>
-                <tbody id="tb-body" class="tbody">
-                    <!-- <tr>
+        </div>
+    </nav>
+    <!-- ====== Main Section ======= -->
+    <main>
+        <div class="hero">
+
+            <div class="table">
+
+                <div class="heading">
+                    <label for="date">Select Date</label>
+                    <input type="date" class="date" name="date" id="date">
+                    <h4>Student Attendence</h4>
+                </div>
+                <form action="" class="table-form" id="form">
+                    <table id="" class="tbl">
+                        <thead class="ht">
+                            <tr>
+                                <th>Roll No.</th>
+                                <th>Student Name</th>
+                                <th>Present</th>
+                                <th>Absent</th>
+                                <th>Leave</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb-body" class="tbody">
+                            <!-- <tr>
                         <td>101</td>
                         <td>Omkar Pandey</td>
                         <td><input type="radio" name="attendance1" value="present"></td>
                         <td><input type="radio" name="attendance1" value="present"></td>
                         <td><input type="radio" name="attendance1" value="present"></td>
                     </tr>  -->
-                </tbody>
-            </table>
-                        <button type="submit" class="submit">Submit Attendance</button>
+                        </tbody>
+                    </table>
+                    <button type="submit" class="submit">Submit Attendance</button>
 
-           </form>
+                </form>
+            </div>
         </div>
-    </div>
-</main>
-<!-- ======== Footer ======= -->
-<footer>
-    <div class="ftr">
-        <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-github"></i>
+    </main>
+    <!-- ======== Footer ======= -->
+    <footer>
+        <div class="ftr">
+            <a class="navbar-brand logo" style="color: #fff; font-size: 1.5rem;" href="#">Edu<span>Portal</span></a>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="ft-links">
+                <a href="./home.html">Home</a>
+                <a href="./teacher.html">Teachers</a>
+                <a href="./student.html">Students</a>
+                <a href="./notes.html">Notes</a>
+                <a href="./attendence.html">Attendence</a>
+            </div>
+            <hr>
+            <p>© 2025 EduPortal | All Rights Reserved</p>
         </div>
-        <div class="ft-links">
-            <a href="./home.html">Home</a>
-            <a href="./teacher.html">Teachers</a>
-            <a href="./student.html">Students</a>
-            <a href="./notes.html">Notes</a>
-            <a href="./attendence.html">Attendence</a>
-        </div>
-        <hr>
-        <p>© 2025 EduPortal | All Rights Reserved</p>
-    </div>
-</footer>
+    </footer>
 </body>
 <script src="./attendence.js">
 
 </script>
+
 </html>

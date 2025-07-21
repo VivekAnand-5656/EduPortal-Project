@@ -223,3 +223,38 @@ body::-webkit-scrollbar {
 }
 
 /* ======= Complete ======= */
+/* ==== Mobile View ==== */
+@media screen and (max-width: 768px) {
+    .hero{
+        padding: 0.5rem;
+    }
+    .form{
+        width: 90%;
+        height:auto;
+        row-gap:0.2rem;
+    }  
+    .add-btn{
+        width: 50%;
+    }
+    .upload-box{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+     .ftr{
+        height: auto;
+    }
+    .ft-links{
+        width: 100%;
+        flex-direction: column;
+    }
+    .icons{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -5,46 +5,51 @@ let subject = document.getElementById("subject");
 let fileUpload = document.getElementById("fileUpload");
 let cards = document.getElementById("cards");
 let logout = document.getElementById("logoutBtn");
+let userName = document.getElementById("userName");
+let currentUser = localStorage.getItem("currentUser");
+if (currentUser) {
+    userName.textContent = currentUser;
+}
 
 let noteData = [];
 
 let storefile = localStorage.getItem("fileset");
 let count;
 let filec = localStorage.getItem("filecount");
-if(storefile){
+if (storefile) {
     noteData = JSON.parse(storefile);
     count = JSON.parse(filec);
     addNotes();
 }
 
-form.addEventListener("submit",(ev)=>{
+form.addEventListener("submit", (ev) => {
     ev.preventDefault();
-      let file = fileUpload.files[0];
+    let file = fileUpload.files[0];
     if (!file) {
         alert("Please upload a file!");
         return;
     }
-        let fileURL = URL.createObjectURL(file);  // temporary URL for browser access
+    let fileURL = URL.createObjectURL(file);  // temporary URL for browser access
 
     let notes = {
-        notname : noteName.value,
-        sub : subject.value,
-        brow : fileURL,
+        notname: noteName.value,
+        sub: subject.value,
+        brow: fileURL,
     }
     noteData.push(notes);
-    count= noteData.length;
+    count = noteData.length;
     addNotes();
-    localStorage.setItem("fileset",JSON.stringify(noteData));
-    localStorage.setItem("filecount",JSON.stringify(count));
+    localStorage.setItem("fileset", JSON.stringify(noteData));
+    localStorage.setItem("filecount", JSON.stringify(count));
     alert("Notes Added Successfully");
     form.reset();
 })
-function addNotes(){
-    cards.innerHTML="";
+function addNotes() {
+    cards.innerHTML = "";
     noteData.forEach((element, index) => {
         let box = document.createElement("div");
-        box.className="box";
-        box.innerHTML=` 
+        box.className = "box";
+        box.innerHTML = ` 
             <img src="./images/pdf_9496432.png" alt="Pdf">
             <h2>${element.notname}</h2>
             <p>${element.sub}</p>
@@ -61,12 +66,15 @@ function addNotes(){
 function deleteNote(index) {
     noteData.splice(index, 1);
     count--;
-    localStorage.setItem("fileset",JSON.stringify(noteData));
-    localStorage.setItem("filecount",JSON.stringify(count));
+    localStorage.setItem("fileset", JSON.stringify(noteData));
+    localStorage.setItem("filecount", JSON.stringify(count));
     addNotes();
 }
 
 // ==== Logout ====
-logout.addEventListener("click",()=>{
-  confirm("Are you sure to want to logout ? ");  
-})
+const toggler = document.getElementById('hamburgar');
+const collapse = document.getElementById('navbarTogglerDemo02');
+
+toggler.addEventListener('click', () => {
+    collapse.classList.toggle('show');
+});

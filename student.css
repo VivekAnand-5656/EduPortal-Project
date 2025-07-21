@@ -177,3 +177,44 @@ body::-webkit-scrollbar {
     text-decoration: underline;
 }
 /* ======= Complete ======= */
+/* ==== Mobile View ==== */
+@media screen and (max-width: 768px) {
+    .hero{
+        padding: 0.5rem;
+    }
+    .form{
+        width: 90%;
+        height: auto;
+    } 
+    .table{
+        overflow: scroll;
+        padding: 0.5rem;
+    } 
+    .search{
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+    .table-data{
+        width: 100%;
+    }
+    .table td{
+        width: auto;
+        height: auto;
+    }
+     .ftr{
+        height: auto;
+    }
+    .ft-links{
+        width: 100%;
+        flex-direction: column;
+    }
+    .icons{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
